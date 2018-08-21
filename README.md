@@ -110,8 +110,18 @@ For more information, see [Analyzing entity sentiment](https://cloud.google.com/
 ### Text Classification
 
 ```bash
-$ python examples/text_classification.py ""
+$ python examples/classify_text.py "On Saturday, Sevilla FC announced the signing of Spanish defender Aleix Vidal from defending LaLiga champions FC Barcelona. Via their official website, Barcelona said they were to receive €8.5 million transfer as well as two million in variables."
+====================
+name            : /Sports/Team Sports/Soccer
+confidence      : 0.9900000095367432
+====================
+name            : /News
+confidence      : 0.550000011920929
+
 ```
+
+For more information, see [Classifying text](https://cloud.google.com/natural-language/docs/classifying-text).
+In [the content category page](https://cloud.google.com/natural-language/docs/categories), You can see all categories returned by classify_text method.
 
 ### Text Annotation
 
