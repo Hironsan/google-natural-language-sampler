@@ -40,7 +40,6 @@ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/credentials-key.json
 
 ## Quick Start: Running the Example
 
-
 ### Sentiment Analysis
 
 ```bash
@@ -51,9 +50,18 @@ Sentiment: 0.30000001192092896, 0.30000001192092896
 
 ### Named Entity Recognition
 
-
 ```bash
-$ python examples/named_entity.py "President Obama is speaking at the White House."
+$ python examples/named_entities.py "President Obama is speaking at the White House."
+====================
+         name: Obama
+         type: PERSON
+     salience: 0.9082207679748535
+wikipedia_url: -
+====================
+         name: White House
+         type: LOCATION
+     salience: 0.09177924692630768
+wikipedia_url: https://en.wikipedia.org/wiki/White_House
 ```
 
 ### Syntax Analysis
