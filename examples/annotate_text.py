@@ -25,7 +25,8 @@ def main(text):
     entity_type = ('UNKNOWN', 'PERSON', 'LOCATION', 'ORGANIZATION',
                    'EVENT', 'WORK_OF_ART', 'CONSUMER_GOOD', 'OTHER')
 
-    print('Sentiment: {}, {}'.format(sentiment.score, sentiment.magnitude))
+    print('    Sentiment score: {}'.format(sentiment.score))
+    print('Sentiment magnitude: {}'.format(sentiment.magnitude))
 
     for entity in entities:
         print('=' * 20)
