@@ -48,6 +48,8 @@ Text: Hello, world
 Sentiment: 0.30000001192092896, 0.30000001192092896
 ```
 
+For more information, see [Analyzing sentiment](https://cloud.google.com/natural-language/docs/analyzing-sentiment)
+
 ### Named Entity Recognition
 
 ```bash
@@ -64,11 +66,24 @@ wikipedia_url: -
 wikipedia_url: https://en.wikipedia.org/wiki/White_House
 ```
 
+For more information, see [Analyzing entities](https://cloud.google.com/natural-language/docs/analyzing-entities)
+
 ### Syntax Analysis
 
 ```bash
-$ python examples/syntax_analysis.py ""
+$ python examples/syntax_analysis.py "President Obama is speaking at the White House."
+NOUN: President
+NOUN: Obama
+VERB: is
+VERB: speaking
+ADP: at
+DET: the
+NOUN: White
+NOUN: House
+PUNCT: .
 ```
+
+For more information, see [Analyzing syntax](https://cloud.google.com/natural-language/docs/analyzing-syntax)
 
 ### Entity Sentiment Analysis
 
@@ -111,5 +126,6 @@ To enable accurate image detection within the Google Cloud Vision API, images sh
 
 ## References
 
+* [Natural Language](https://googlecloudplatform.github.io/google-cloud-python/latest/language/usage.html)
 * [Natural Language API Client Libraries](https://cloud.google.com/natural-language/docs/reference/libraries)
 * [Method: documents.classifyText](https://cloud.google.com/natural-language/docs/reference/rest/v1/documents/classifyText)
