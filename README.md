@@ -48,7 +48,7 @@ Text: Hello, world
 Sentiment: 0.30000001192092896, 0.30000001192092896
 ```
 
-For more information, see [Analyzing sentiment](https://cloud.google.com/natural-language/docs/analyzing-sentiment)
+For more information, see [Analyzing sentiment](https://cloud.google.com/natural-language/docs/analyzing-sentiment).
 
 ### Named Entity Recognition
 
@@ -66,7 +66,7 @@ wikipedia_url: -
 wikipedia_url: https://en.wikipedia.org/wiki/White_House
 ```
 
-For more information, see [Analyzing entities](https://cloud.google.com/natural-language/docs/analyzing-entities)
+For more information, see [Analyzing entities](https://cloud.google.com/natural-language/docs/analyzing-entities).
 
 ### Syntax Analysis
 
@@ -83,13 +83,29 @@ NOUN: House
 PUNCT: .
 ```
 
-For more information, see [Analyzing syntax](https://cloud.google.com/natural-language/docs/analyzing-syntax)
+For more information, see [Analyzing syntax](https://cloud.google.com/natural-language/docs/analyzing-syntax).
 
 ### Entity Sentiment Analysis
 
 ```bash
-$ python examples/entity_sentiment.py ""
+$ python examples/entity_sentiment.py "President Obama is speaking at the White House."
+====================
+         name: Obama
+         type: PERSON
+     salience: 0.9082207679748535
+wikipedia_url: -
+    magnitude: 0.10000000149011612
+        score: 0.0
+====================
+         name: White House
+         type: LOCATION
+     salience: 0.09177924692630768
+wikipedia_url: https://en.wikipedia.org/wiki/White_House
+    magnitude: 0.0
+        score: 0.0
 ```
+
+For more information, see [Analyzing entity sentiment](https://cloud.google.com/natural-language/docs/analyzing-entity-sentiment).
 
 ### Text Classification
 
