@@ -23,8 +23,6 @@ def main(text):
         print('{}: {}'.format(pos_tag[token.part_of_speech.tag], token.text.content))
 
 
-
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('text', help='The text you\'d like to analyze entities.')
