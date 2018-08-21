@@ -15,8 +15,8 @@ def main(text):
     # Detects the sentiment of the text
     sentiment = client.analyze_sentiment(document=document).document_sentiment
 
-    print('Text: {}'.format(text))
-    print('Sentiment: {}, {}'.format(sentiment.score, sentiment.magnitude))
+    print('    Sentiment score: {}'.format(sentiment.score))
+    print('Sentiment magnitude: {}'.format(sentiment.magnitude))
 
 
 if __name__ == '__main__':
