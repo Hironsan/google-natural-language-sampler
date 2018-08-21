@@ -43,9 +43,9 @@ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/credentials-key.json
 ### Sentiment Analysis
 
 ```bash
-$ python examples/sentiment_analysis.py "Hello world"
-Text: Hello, world
-Sentiment: 0.30000001192092896, 0.30000001192092896
+$ python examples/sentiment_analysis.py "President Obama looks very happy."
+    Sentiment score: 0.4000000059604645
+Sentiment magnitude: 0.4000000059604645
 ```
 
 For more information, see [Analyzing sentiment](https://cloud.google.com/natural-language/docs/analyzing-sentiment).
@@ -127,7 +127,8 @@ In [the content category page](https://cloud.google.com/natural-language/docs/ca
 
 ```bash
 $ python examples/annotate_text.py "President Obama looks very happy."
-Sentiment: 0.4000000059604645, 0.4000000059604645
+    Sentiment score: 0.4000000059604645
+Sentiment magnitude: 0.4000000059604645
 ====================
          name: Obama
          type: PERSON
