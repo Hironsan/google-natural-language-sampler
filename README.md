@@ -126,21 +126,16 @@ In [the content category page](https://cloud.google.com/natural-language/docs/ca
 ### Text Annotation
 
 ```bash
-$ python examples/text_annotation.py ""
+$ python examples/annotate_text.py "President Obama looks very happy."
+Sentiment: 0.4000000059604645, 0.4000000059604645
+====================
+         name: Obama
+         type: PERSON
+     salience: 1.0
+wikipedia_url: https://en.wikipedia.org/wiki/Barack_Obama
 ```
 
-## Image Sizing
-
-To enable accurate image detection within the Google Cloud Vision API, images should generally be a minimum of 640 x 480 pixels (about 300k pixels). Full details for different types of Vision API Feature requests are shown below:
-
-| Vision API Feature | Recommended Size | Notes |
-|---|---|---|
-| FACE_DETECTION | 1600 x 1200 | Distance between eyes is most important |
-| LANDMARK_DETECTION | 640 x 480 |   |
-| LOGO_DETECTION | 640 x 480 |   |
-| LABEL_DETECTION | 640 x 480 |   |
-| TEXT_DETECTION | 1024 x 768 | OCR requires more resolution to detect characters |
-| SAFE_SEARCH_DETECTION | 640 x 480 |   |
+For more information, see [AnnotateTextRequest](https://cloud.google.com/natural-language/docs/reference/rpc/google.cloud.language.v1#google.cloud.language.v1.AnnotateTextRequest).
 
 ## Licence
 
