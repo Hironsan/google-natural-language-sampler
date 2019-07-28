@@ -16,7 +16,7 @@ def main(text):
 
     # entity types from enums.Entity.Type
     entity_type = ('UNKNOWN', 'PERSON', 'LOCATION', 'ORGANIZATION',
-                   'EVENT', 'WORK_OF_ART', 'CONSUMER_GOOD', 'OTHER')
+                   'EVENT', 'WORK_OF_ART', 'CONSUMER_GOOD', 'OTHER', 'PHONE_NUMBER', 'ADDRESS', 'DATE', 'NUMBER', 'PRICE')
 
     for entity in entities:
         print('=' * 20)
